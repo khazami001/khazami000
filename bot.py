@@ -52,7 +52,8 @@ async def add_payment(update: Update, context: CallbackContext, user_name: str) 
             record_holder = record_data[1]
             record_amount = record_data[2]
 
-        message = f"""💎 {user_name} 💎
+        message = f"""👑 {user_name}
+
 
 واریزی: {amount:,.0f} تومن
 
@@ -85,7 +86,7 @@ async def get_total(update: Update, context: CallbackContext) -> None:
     record_holder = record_data[1] if record_data else "نامشخص"
     record_amount = record_data[2] if record_data else 0
 
-    message = f"""💎 {user_name} 💎
+    message = f"""👑 {user_name}
 
 جمع واریزی تا این لحظه: {total_amount:,.0f} تومن🔥
 
